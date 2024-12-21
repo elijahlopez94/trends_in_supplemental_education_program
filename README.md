@@ -1,5 +1,5 @@
 ![alt text](path_to_banner_image)
-# Title
+# Trends in Supplemental Education Program
 Author: Elijah Lopez
 
 
@@ -14,10 +14,41 @@ This supplemental education program seeks to improve its ability to convert pros
 
 
 ## Data
+The data used in this project was proprietary and analyzed with explicit permission from the business owner. It was sourced from multiple internal systems and consolidated into three primary datasets to facilitate comprehensive analysis:
+* Leads - There are 1,533 leads from Aug 2011 - Dec. 2024 measured on 7 features. These include information such as when the lead was created, lead source, student information, and whether or not they enrolled.
+* Accounts - There are 653 accounts from June 2013 - Dec. 2024 measured on 10 features. These include contract start and end dates as well as enrollment length and type, current status, and student information.
+* Student Progress per Assessment Level - Assessment data combines all assessments for each grade level a student worked on where the student had attempted at least one post-assessment. There are 356 assessments matching this criteria from 2000-01-01 to 2024-12-09. Each assessment is measured across 12 features such as pre- and post-assessment dates, level, student grade, number of attempts, and per level metrics such as PKs (assignments) and number visits to the center.
 
 
 ## Methods
 
+In order to maintain confidentiality and protect proprietary details I merged source documents (7 in total) based on Lead ID. 
+
+### Leads
+* Merged two sources, each with unique information
+* Encrypted zip codes
+* Condensed lead sources based on key phrases
+* Dropped 'bad leads' (no contact information; 2)
+
+### Accounts
+* Merged two sources, each with unique information
+* Dropped sensitive customer information but otherwise used raw data.
+* No null values
+
+### Student Progress per Assessment Level
+* Single source document
+* Created map for assessment names to grade level equivalent
+    * Used this to calculate relative student performance to grade level
+* For nulls in grade_on_post_dt. (15) I imputed median grade for the matching assessment level.
+* Dropped 'NF' assessment types due to differences in implementation from traditional assessments (18 entries).
+
+
+### Other
+* Converted dates to date time and calculated elapsed time from creation to today
+    * Assigned 3 letter abbreviation in 'month' column which was then grouped and plotted for various visualizations
+* Created grade map to convert grade from string to integer
+    * Used this to calculate grade a time of lead creation and grade at time of enrollment
+* Standardized enrollment data to float format
 
 
 ## Results
@@ -32,7 +63,7 @@ This supplemental education program seeks to improve its ability to convert pros
 
 #### Leads Converted
 ![alt text](images/location_1/leads/converted_leads_over_time.png)
-![alt text](images/location_1/leads/converted_leads_per_month.png.png)
+![alt text](images/location_1/leads/converted_leads_per_month.png)
 * Cyclical pattern but with post-COVID years averaging lower than pre-COVID years.
 * Average monthly leads converted is 5.
 * Lead conversion is highest in Sept, and the first three months of the calendar year.
@@ -88,7 +119,7 @@ This supplemental education program seeks to improve its ability to convert pros
 * Enrollment length is 4.6 (median) to 6.2 (mean) months.
 
 
-### Student Assessment Progress
+### Student Progress per Assessment Level
 #### Relative Performance
 ![alt text](images/location_1/student_assessments/relative_performance.png)
 * Relative student performance is 1.5 (mean) to 1.0 (median) BELOW grade level.
@@ -131,7 +162,7 @@ This analysis leads to the following recommendations:
 * Increase retention through active communication and progress reporting, especially leading up to August.
 * Incentivize longer commitments to increase average length of stay.
 
-### Student Assessment Progress
+### Student Progress per Assessment Level
 * Highlight capability to work with students of all ability levels to build trust and credibility with new leads. 
 * Flag students that are failing to achieve a passing score after their second post-assessment to understand reasons why.
     * Target higher pre-assessment scores so students are more likely to pass post-assessment within two attempts.
