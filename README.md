@@ -120,10 +120,6 @@ In order to maintain confidentiality and protect proprietary details I merged so
 
 
 ### Student Progress per Assessment Level
-#### Relative Performance
-![alt text](images/location_1/student_assessments/relative_performance.png)
-* Relative student performance is 1.5 (mean) to 1.0 (median) BELOW grade level.
-
 #### Assessment Progress per Attempt
 ![alt text](images/location_1/student_assessments/performance_change_by_attempt.png)
 ![alt text](images/location_1/student_assessments/post_assessment_attempts.png)
@@ -138,6 +134,10 @@ In order to maintain confidentiality and protect proprietary details I merged so
 * PKs completed is approximately 15.
 * Attendance is 25 sessions.
 * Time is 4.6 (median) to 6.0 (mean) months.
+
+#### Relative Performance
+![alt text](images/location_1/student_assessments/relative_performance.png)
+* Relative student performance is 1.5 (mean) to 1.0 (median) BELOW grade level.
 
 
 ## Conclusions
