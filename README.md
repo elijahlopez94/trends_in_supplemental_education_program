@@ -102,10 +102,10 @@ In order to maintain confidentiality and protect proprietary details I merged so
     * High: 41/37 with a large increase in demand for private sessions (18)
 * Student grade at enrollment shifts slightly upward to grades 4-6.
 
-#### Cancelations
-![alt text](images/location_1/accounts/cancelations_over_time.png)
-![alt text](images/location_1/accounts/cancelations_per_month.png)
-* Average monthly cancelations is 6.
+#### Cancellations
+![alt text](images/location_1/accounts/cancellations_over_time.png)
+![alt text](images/location_1/accounts/cancellations_per_month.png)
+* Average monthly cancellations is 6.
     * Highest month is Aug. Possibly explained by families wanting to "see how this year goes" before committing to longer term option. (opportunity zone!)
     * Lowest month is Nov. (heading toward semester 1 finals).
 
