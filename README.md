@@ -1,4 +1,4 @@
-![alt text](path_to_banner_image)
+![alt text](images/location_1/other/banner.png)
 # Trends in Supplemental Education Program
 Author: Elijah Lopez
 
@@ -193,8 +193,16 @@ This analysis leads to the following recommendations:
         * Communicate with parents about current standing and confirm/reset expectations for the future.
 
 
+## Opportunities for Improvement
+* Clean duplicates in internal system.
+* Consistently collect same lead info.
+* Track student grade at all critical times (at lead/account creation and for each assessment).
+* Record private sessions as enrollments instead of charge to account.
+* Always do a post-assessment before moving to a student to the next level.
+
+
 ## For More Information
-See the full analysis in the [Jupyter Notebook](https://github.com/elijahlopez94/trends_in_supplemental_education_program/blob/main/eda_notebook.ipynb) or review this [presentation](URL_for_slides).
+See the full analysis in the [Jupyter Notebook](https://github.com/elijahlopez94/trends_in_supplemental_education_program/blob/main/eda_notebook.ipynb) or review this [presentation](https://docs.google.com/presentation/d/11vkjpD9M5Q125K4gQ_E3Owk-1sUVbmsAAHMwzh5RV2w/edit?usp=sharing).
 
 For additional info, contact the author at:
 
